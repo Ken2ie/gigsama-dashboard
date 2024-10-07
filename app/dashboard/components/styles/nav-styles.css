@@ -1,0 +1,81 @@
+.nav-bar{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    border-bottom: 1px solid #1F1F1F33;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-inline-size: 80rem;
+    align-items: center;
+}
+
+.action-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.closed-to-offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 11px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+#closed-chevron-button{
+    color: #ddd;
+}
+
+.notifications{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bell{
+    font-size: 20px;
+}
+
+#help{
+    color: #5e5e5e;
+}
+
+#notifier{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 40px;
+    background-color: red;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    nav{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav{
+        padding: 0 20px;
+    }
+    
+    .closed-to-offers{
+        display: none;
+    }
+    
+}

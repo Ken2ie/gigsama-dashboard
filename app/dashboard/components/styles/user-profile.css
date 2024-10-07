@@ -1,0 +1,54 @@
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.user-circle{
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid #E9E9E9;
+    border-radius: 50px;
+}
+
+.user-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.menu{
+    width: 15rem;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px #00000020;
+    top: 50px;
+    right: 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.menu ul li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.menu ul li:last-child{
+    border-bottom: 0;
+}
+
+.menu ul li span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu ul li:hover{
+    background-color: #eee;
+    transition: 0.2s all ease;
+}

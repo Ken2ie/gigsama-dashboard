@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Inter';
+}
+
+.pointer, #pointer{
+  cursor: pointer;
+}
+
+.steps{
+  height: 10dvh;
+  min-height: 10dvh;
+  /* background-color: #ddd; */
+  align-items: flex-start;
+}
+
+.progress:first-child{
+  width: 10rem;
+  min-width: 10px;
+}
+
+.dashes{
+  border-top: 3px dashed rgb(182, 182, 182);
+  width: 100%;
+  height: 0;
+}
+
+.noDashes{
+  border-top: 3px solid #10B981;
+  width: 40%;
+  height: 0;
+}
+
+.step:last-child{
+  margin-inline-end: 68px;
+}
+
+.stepGreen{
+  background-color: #10B981;
+}
+
+@media screen and (max-width: 900px) {
+   .step:last-child{
+    margin-inline-end: 0;
+     /* right: 70px; */
+   }
+
+   .stepText{
+    display: none;
+   }
+}
